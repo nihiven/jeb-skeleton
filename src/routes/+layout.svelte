@@ -1,8 +1,8 @@
 <script>
-	import '@skeletonlabs/skeleton/themes/theme-modern.css';
+	import '../../src/nihiven.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
@@ -14,6 +14,7 @@
 				<strong class="text-xl">Justin Behanna</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch />
 				<a
 					class="btn btn-sm btn-ghost-surface"
 					href="https://twitter.com/nihiven"
@@ -32,10 +33,15 @@
 					target="_blank"
 					rel="noreferrer">Last.fm</a
 				>
+				<a
+					class="btn btn-sm btn-ghost-surface"
+					href="https://www.linkedin.com/in/justin-behanna/"
+					target="_blank"
+					rel="noreferrer">LinkedIn</a
+				>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<svelte:fragment slot="pageFooter">justinbehanna.com</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
 </AppShell>
