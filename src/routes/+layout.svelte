@@ -6,6 +6,10 @@
 </script>
 
 <!-- App Shell -->
+<svelte:head>
+	<title>jb.com</title>
+</svelte:head>
+
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
