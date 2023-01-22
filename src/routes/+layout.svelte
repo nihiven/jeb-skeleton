@@ -6,16 +6,12 @@
 </script>
 
 <!-- App Shell -->
-<svelte:head>
-	<title>jb.com</title>
-</svelte:head>
-
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl">Justin Behanna</strong>
+				<strong class="text-xl"><a href="/">Justin Behanna</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
