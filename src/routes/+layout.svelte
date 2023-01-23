@@ -3,6 +3,7 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+	import Footer from '../docs/footer.svelte';
 </script>
 
 <!-- App Shell -->
@@ -14,6 +15,8 @@
 				<strong class="text-xl"><a href="/">Justin Behanna</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<!-- Divider -->
+				<span class="divider-vertical h-5" />
 				<LightSwitch />
 				<a
 					class="btn btn-sm btn-ghost-surface"
@@ -41,6 +44,9 @@
 				>
 			</svelte:fragment>
 		</AppBar>
+	</svelte:fragment>
+	<svelte:fragment slot="footer">
+		<Footer />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
