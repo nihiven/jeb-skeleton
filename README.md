@@ -6,7 +6,7 @@ I'd host this on Geocities if they were still around.
 
 [Svelte.dev](https://svelte.dev/): "Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app. Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes."
 
-[Skeleton.dev](https://svelte.dev/): "Skeleton is a UI library, featuring tight integration between Svelte and Tailwind CSS."
+[Skeleton.dev](https://skeleton.dev/): "Skeleton is a UI library, featuring tight integration between Svelte and Tailwind CSS."
 
 ## Hosted on Netlify
 
