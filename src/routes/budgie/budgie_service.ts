@@ -18,8 +18,9 @@ const headers = {
 
 
 export async function getBudgieData(key: string) {
-  const response = await fetch(baseUrl, { headers });
+  const response = await fetch(baseUrl, headers);
   const res = await response.json();
   if (res.ok) return res;
   throw new Error(res.error);
 }
+
