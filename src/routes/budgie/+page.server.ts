@@ -1,5 +1,5 @@
 import { fail } from '@sveltejs/kit';
-import { API_KEY } from '$env/static/private';
+// import { API_KEY } from '$env/static/private';
 
 export const actions = {
 	default: async () => {
@@ -9,7 +9,7 @@ export const actions = {
 			headers: {
 				'Content-Type': 'application/json',
 				'Access-Control-Request-Headers': '*',
-				'api-key': API_KEY
+				//'api-key': API_KEY
 			},
 			body: JSON.stringify({
 				collection: 'config',

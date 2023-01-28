@@ -1,10 +1,10 @@
-import { API_KEY } from '$env/static/private';
+//import { API_KEY } from '$env/static/private';
 
 const api_prefix = '/api/v1/';
 const baseUrl = 'https://data.mongodb-api.com/app/data-xjvrs/endpoint/data/v1/';
 const verURL = 'https://data.mongodb-api.com/app/data-xjvrs/endpoint/version';
 const headers = {
-	apiKey: API_KEY,
+	//apiKey: API_KEY,
 	method: 'get'
 };
 
