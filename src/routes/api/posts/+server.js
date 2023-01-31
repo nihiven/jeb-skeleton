@@ -1,9 +1,7 @@
-import { API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export const GET = ({ request }) => {
 	const authHeader = request.headers.get('Authorization');
-	console.log(authHeader);
-	console.log(API_KEY);
 
 	if (!authHeader) {
 		return new Response(JSON.stringify({ error: 'Not authorized.' }), {
