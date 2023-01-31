@@ -1,8 +1,13 @@
+<script>
+	import HeroHome from '../docs/HeroHome.svelte';
+</script>
+
 <svelte:head>
 	<title>jb.com</title>
 </svelte:head>
 
 <div class="container h-full mx-auto flex justify-center items-center">
+	<HeroHome />
 	<div class="space-y-10 text-center">
 		<h2 class="font-bold">Welcome to Skeleton.</h2>
 		<!-- Animated Logo -->

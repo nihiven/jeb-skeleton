@@ -14,9 +14,13 @@ I'd host this on Geocities if they were still around.
 
 ## To Do
 
+- Front Page
+  - Hero design
 - Menu
   - Projects
   - Resume
-  - ??
+  - Blog
+    - Post system
+  - Call Atlas
 
 > Wherever you go, there you are.
