@@ -11,7 +11,7 @@
 		<a href="https://tailwindcss.com/" class="hover:underline">Tailwind.</a>
 	</span>
 	<span class="divider-vertical visible md:invisible sm:text-center" />
-	<span class="text-center">
+	<span class="text-center text-xl">
 		{#if $storeLightSwitch}
 			<a href="https://www.youtube.com/watch?v=MFQS7kOCwoI" class="hover:underline">🐵</a>
 		{:else}
