@@ -19,10 +19,15 @@ I'd host this on Geocities if they were still around.
 - Front Page
   - Hero design
 - Menu
+
   - Projects
   - Resume
   - Blog
     - Post system
   - Call Atlas
+
+  ## Code Profile
+
+  https://vscode.dev/profile/github/22acc44b8bb3e230b9e2ca200c24b005
 
 > Wherever you go, there you are.
