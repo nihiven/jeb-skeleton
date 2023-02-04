@@ -7,15 +7,15 @@
 >
 	<span class="text-gray-500 sm:text-center dark:text-gray-400">
 		Built with
-		<a href="https://svelte.dev/" class="hover:underline">Svelte</a> and
-		<a href="https://tailwindcss.com/" class="hover:underline">Tailwind.</a>
+		<a href="https://kit.svelte.dev/" class="hover:underline">SvelteKit</a> and hosted on
+		<a href="https://netlify.com" class="hover:underline">Netlify</a>.
 	</span>
 	<span class="divider-vertical visible md:invisible sm:text-center" />
 	<span class="text-center text-xl">
 		{#if $storeLightSwitch}
 			<a href="https://www.youtube.com/watch?v=MFQS7kOCwoI" class="hover:underline">🐵</a>
 		{:else}
-			😎
+			🙈
 		{/if}
 	</span>
 	<span class="divider-vertical visible md:invisible sm:text-center" />

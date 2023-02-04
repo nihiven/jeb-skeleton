@@ -1,6 +1,7 @@
 <script>
-	import { AppBar, Avatar, LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppBar, Avatar } from '@skeletonlabs/skeleton';
 	import { menu } from '@skeletonlabs/skeleton';
+	import ToggleLights from '../comp/ToggleLights.svelte';
 </script>
 
 <AppBar>
@@ -14,7 +15,7 @@
 		<strong class="text-xl"><a href="/">Justin Behanna</a></strong>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<LightSwitch />
+		<ToggleLights turnLightsOffIcon="🙈" turnLightsOnIcon="🐵" />
 		<span class="divider-vertical h-5" />
 		<section class="hidden lg:flex">
 			<!-- Resume -->
