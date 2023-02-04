@@ -15,7 +15,8 @@
 		<strong class="text-xl"><a href="/">Justin Behanna</a></strong>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<ToggleLights turnLightsOffIcon="🙈" turnLightsOnIcon="🐵" />
+		<ToggleLights turnLightsOffIcon="🌑" turnLightsOnIcon="🌕" />
+
 		<span class="divider-vertical h-5" />
 		<section class="hidden lg:flex">
 			<!-- Resume -->

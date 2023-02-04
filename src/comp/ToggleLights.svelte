@@ -29,8 +29,8 @@
 {#if lightSwitch}
 	<span
 		class="cursor-pointer"
-		title="Toggle {$storeLightSwitch ? 'Light' : 'Dark'} Mode"
-		aria-label="Toggle Lights"
+		title="Turn Dark Mode Off"
+		aria-label="Toggle Dark Mode"
 		on:click|preventDefault={toggleLightSwitch}
 		on:keydown|preventDefault={toggleLightSwitch}
 	>
@@ -39,8 +39,8 @@
 {:else}
 	<span
 		class="cursor-pointer"
-		aria-label="Toggle Lights"
-		title="Toggle {$storeLightSwitch ? 'Light' : 'Dark'} Mode"
+		title="Turn Dark Mode On"
+		aria-label="Toggle Dark Mode"
 		on:click|preventDefault={toggleLightSwitch}
 		on:keydown|preventDefault={toggleLightSwitch}
 	>
