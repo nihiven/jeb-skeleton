@@ -1,15 +1,28 @@
-<div class="container mx-auto flex items-center">
-	<div class="space-y-10 text-center">
-		<form method="POST" action="?/compose">
-			<label>
-				Title
-				<input name="title" type="text" />
-			</label>
-			<label>
-				Cool Sentences
-				<input name="content" type="text" />
-			</label>
-			<button>Post</button>
-		</form>
+<script>
+	const time = new Date();
+	const publishTime =
+		time.toLocaleDateString('sv-SE') + 'T' + time.toLocaleTimeString('sv-SE').slice(0, 5);
+	console.log(publishTime);
+</script>
+
+<div class="doc-shell-sandbox mx-4 space-y-8 md:space-y-12">
+	<div class="card">
+		<div class="p-4">
+			<form method="POST" action="?/compose">
+				<label class="input-label">
+					<span>Title</span>
+					<input name="title" type="text" required />
+				</label>
+				<label class="input-label"
+					><span>Publish Date and Time</span>
+					<input name="publish_time" type="datetime-local" value={publishTime} /></label
+				>
+				<label>
+					<span>Cool Sentences</span>
+					<textarea rows="15" name="content" class="form-textarea" />
+				</label>
+				<button class="variant-filled-secondary">Post</button>
+			</form>
+		</div>
 	</div>
 </div>
