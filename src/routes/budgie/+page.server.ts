@@ -8,7 +8,7 @@ export const actions = {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
-				'Access-Control-Request-Headers': '*',
+				'Access-Control-Request-Headers': '*'
 				//'api-key': API_KEY
 			},
 			body: JSON.stringify({

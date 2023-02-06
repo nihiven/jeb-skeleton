@@ -11,7 +11,7 @@
 			<form method="POST" action="?/compose">
 				<label class="input-label">
 					<span>Title</span>
-					<input name="title" type="text" required />
+					<input name="title" type="text" value="Test Post Title" required />
 				</label>
 				<label class="input-label"
 					><span>Publish Date and Time</span>
@@ -19,7 +19,12 @@
 				>
 				<label>
 					<span>Cool Sentences</span>
-					<textarea rows="15" name="content" class="form-textarea" />
+					<textarea
+						rows="15"
+						name="content"
+						class="form-textarea"
+						value="Test text for another test post."
+					/>
 				</label>
 				<button class="variant-filled-secondary">Post</button>
 			</form>

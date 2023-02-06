@@ -1,26 +1,21 @@
 import type { Actions } from './$types';
 import { PrismaClient, Prisma } from '@prisma/client';
+import { redirect } from '@sveltejs/kit';
 
 const prisma = new PrismaClient();
 
 export const actions: Actions = {
-	compose: async ({request}) => {
-    const formData = await request.formData();
-		const data = formData.entries();
-		// TODO: check for errors
-		// if form error, highlight errors on form
-		// if server error, show error toast
-		console.log(data);
+	compose: async ({ request }) => {
+		const data = await request.formData();
 
-		// TODO: when there are no errors
-		// create new post
-		let post: Prisma.PostCreateInput;
-		post = {
-			title: data.title,
-			content: data.content,
-			publish_time: data.publish_time
+		// BUG: not sure about publish_time or the use of !
+		const post: Prisma.PostCreateInput = {
+			title: data.get('title')!.toString(),
+			content: data.get('content')?.toString(),
+			publish_time: new Date(data.get('publish_time')!.toString())
 		};
-		const res = await prisma.post.create({data: post});
-		// redirect to new post?
+
+		const res = await prisma.post.create({ data: post });
+		redirect(303, `/blog/${res.id}`);
 	}
 };

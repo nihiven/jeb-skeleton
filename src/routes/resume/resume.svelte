@@ -225,6 +225,4 @@
 </article>
 
 <!-- Footer -->
-<footer>
-	<a href="#" onclick="javascript:window.print();">Print</a>
-</footer>
+<footer>Update: 2023-01-19</footer>
