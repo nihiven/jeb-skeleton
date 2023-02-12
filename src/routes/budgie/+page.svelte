@@ -9,5 +9,3 @@
 		console.log(budgieData);
 	});
 </script>
-
-{budgieData}} tests
