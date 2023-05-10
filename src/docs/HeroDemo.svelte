@@ -13,7 +13,7 @@
 		</figure>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
-			<a class="btn btn-filled" href="https://skeleton.dev/" target="_blank" rel="noreferrer"
+			<a class="btn variant-filled" href="https://skeleton.dev/" target="_blank" rel="noreferrer"
 				>Launch Documentation</a
 			>
 		</div>

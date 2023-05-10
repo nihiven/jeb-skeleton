@@ -1,14 +1,17 @@
 <script>
-	import '../../src/nihiven.css';
-	import '@skeletonlabs/skeleton/styles/all.css';
-	import '../app.postcss';
+	// order matters
+	import '../../src/nihiven.css'; // 1st
+	import '@skeletonlabs/skeleton/styles/all.css'; // 2nd
+	import '../app.postcss'; // 3rd
+	///
+
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import TopNav from '../docs/TopNav.svelte';
 	import Footer from '../docs/Footer.svelte';
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell>
 	<svelte:fragment slot="header">
 		<TopNav />
 	</svelte:fragment>
